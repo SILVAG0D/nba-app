@@ -1,5 +1,8 @@
 package com.example.nba.presentation.routes
 
 enum class RoutesEnum() {
-    HomeScreen
+    HomeScreen,
+    TeamsListScreen,
+    PlayersListScreen,
+    PlayerDetailsScreen
 }
