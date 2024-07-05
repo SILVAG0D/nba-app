@@ -27,7 +27,8 @@ fun TeamsListScreen() {
     Column(
         modifier = Modifier
             .fillMaxWidth()
-            .background(color = Color.LightGray).padding(8.dp)
+            .background(color = Color.LightGray)
+            .padding(8.dp)
     ) {
         LazyColumn(
             modifier = Modifier.fillMaxSize()
@@ -52,7 +53,8 @@ fun TeamItem(teamName: String) {
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(16.dp).align(Alignment.CenterHorizontally),
+                .padding(16.dp)
+                .align(Alignment.CenterHorizontally),
             horizontalArrangement = Arrangement.SpaceBetween,
 
         ) {
@@ -61,6 +63,7 @@ fun TeamItem(teamName: String) {
                 painter = painterResource(id = R.drawable.ic_launcher_foreground), // replace with your icon resource
                 contentDescription = null
             )
+            Text(text = "dsadsa")
         }
     }
 }
