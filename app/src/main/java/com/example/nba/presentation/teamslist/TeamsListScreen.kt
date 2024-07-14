@@ -63,7 +63,7 @@ fun TeamItem(teamName: String) {
                 painter = painterResource(id = R.drawable.ic_launcher_foreground), // replace with your icon resource
                 contentDescription = null
             )
-            Text(text = "dsadsa")
+            Text(text = "apenas testando emulador")
         }
     }
 }
