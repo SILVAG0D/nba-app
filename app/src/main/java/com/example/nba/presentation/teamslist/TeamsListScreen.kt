@@ -47,7 +47,7 @@ fun TeamItem(teamName: String) {
             .fillMaxSize()
             .padding(8.dp),
         onClick = {
-            // Handle item click here
+
         }
     ) {
         Row(

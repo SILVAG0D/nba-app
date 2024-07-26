@@ -8,9 +8,9 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.nba.presentation.home.HomeScreen
 import com.example.nba.presentation.playerslist.PlayersListScreen
 import com.example.nba.presentation.teamslist.TeamsListScreen
-import com.example.nba.presentation.home.HomeScren
 import com.example.nba.presentation.playerdetail.PlayerDetailsScreen
 
 @Composable
@@ -24,7 +24,7 @@ fun RoutesConfig() {
             modifier = Modifier.padding(padding)
         ) {
             composable(route = RoutesEnum.HomeScreen.name) {
-                HomeScren(navController)
+                HomeScreen(navController)
             }
             composable(route = RoutesEnum.TeamsListScreen.name) {
                 TeamsListScreen()
