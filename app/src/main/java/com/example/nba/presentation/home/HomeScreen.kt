@@ -1,5 +1,7 @@
 package com.example.nba.presentation.home
 
+import TeamsListViewModel
+import androidx.annotation.OptIn
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Card
@@ -12,12 +14,13 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.media3.common.util.UnstableApi
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.example.nba.presentation.routes.RoutesEnum
-import com.example.nba.presentation.teamslist.TeamsListViewModel
 import kotlinx.coroutines.launch
 
+@OptIn(UnstableApi::class)
 @Composable
 fun HomeScreen(navController: NavController) {
     // Use the viewModel() function to obtain the ViewModel instance

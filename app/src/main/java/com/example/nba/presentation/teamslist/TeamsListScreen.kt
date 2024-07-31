@@ -14,13 +14,7 @@ import androidx.compose.ui.unit.dp
 import com.example.nba.R
 
 // Sample data
-val teams = listOf(
-    "Lakers",
-    "Warriors",
-    "Nets",
-    "Bucks",
-    "Clippers"
-)
+
 
 @Composable
 fun TeamsListScreen() {
@@ -33,8 +27,9 @@ fun TeamsListScreen() {
         LazyColumn(
             modifier = Modifier.fillMaxSize()
         ) {
-            items(teams) { team ->
-                TeamItem(teamName = team)
+            items(1) { team ->
+//                TeamItem(teamName = team)
+
             }
         }
     }
