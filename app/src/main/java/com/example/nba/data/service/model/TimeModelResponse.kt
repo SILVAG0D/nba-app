@@ -2,7 +2,7 @@ package com.example.nba.data.service.model
 
 import com.google.gson.annotations.SerializedName
 
-data class TimeModel(
+data class TimeModelResponse(
     @SerializedName("data")
-    val data: List<Data>
+    val data: List<TeamsResponse>
 )

@@ -1,8 +1,9 @@
 package com.example.nba.data.service.model
 
+import com.example.nba.model.Team
 import com.google.gson.annotations.SerializedName
 
-data class Data(
+data class TeamsResponse(
     @SerializedName("abbreviation")
     val abbreviation: String,
     @SerializedName("city")
@@ -18,3 +19,15 @@ data class Data(
     @SerializedName("name")
     val name: String
 )
+
+fun List<TeamsResponse>.toDomain() = map { team ->
+    Team(
+        abbreviation = team.abbreviation,
+        city = team.city,
+        conference = team.conference,
+        division = team.division,
+        full_name = team.full_name,
+        id = team.id,
+        name = team.name
+    )
+}
